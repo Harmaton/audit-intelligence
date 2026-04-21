@@ -50,6 +50,16 @@ export interface Entity {
   onboardedViaPlatform?: boolean;
 }
 
+export interface Evidence {
+  id: string;
+  fileName: string;
+  fileUrl: string;
+  fileType: string;
+  uploadedAt: string;
+  uploadedBy: string;
+  description?: string;
+}
+
 export interface Recommendation {
   id: string;
   entityId: string;
@@ -60,6 +70,9 @@ export interface Recommendation {
   dueDate: string;
   createdDate: string;
   description: string;
+  evidence?: Evidence[];
+  lastUpdated?: string;
+  managementResponse?: string;
 }
 
 export interface ReconciliationItem {
@@ -97,4 +110,16 @@ export interface ActionEvent {
   title: string;
   timeAgo: string;
   type: "flag" | "escalation" | "resolution" | "update";
+}
+
+export interface Notification {
+  id: string;
+  type: "audit-finding" | "reconciliation-alert" | "recommendation-resolved" | "entity-risk";
+  count: number;
+  status: "active" | "cleared";
+  lastUpdated: string;
+  action?: {
+    label: string;
+    href: string;
+  };
 }

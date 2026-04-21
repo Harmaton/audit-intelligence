@@ -1,11 +1,14 @@
 "use client";
 
-import { useState } from "react";
+"use client";
 
+import { useState } from "react";
 import { StatCard, GlowCard } from "@/components/StatCard";
 import ModuleCard from "@/components/ModuleCard";
 import RiskHeatmap from "@/components/RiskHeatmap";
 import AIAuditCopilot from "@/components/AIAuditCopilot";
+import ImmediateValueCard from "@/components/ImmediateValueCard";
+import NotificationCenter from "@/components/NotificationCenter";
 import { BarChart, LineChart, StackedBarChart } from "@/components/TrendChart";
 import {
   seedAlerts,
@@ -91,6 +94,70 @@ const MODULES = [
 export default function CommandCentrePage() {
   const [sector, setSector] = useState("All sectors");
   const [auditType, setAuditType] = useState("All audit types");
+  const [notifications] = useState([
+    {
+      id: "audit-1",
+      type: "audit-finding" as const,
+      count: 3,
+      status: "active" as const,
+      lastUpdated: new Date().toISOString(),
+      action: { label: "View findings", href: "/risk-intelligence" },
+    },
+    {
+      id: "recon-1",
+      type: "reconciliation-alert" as const,
+      count: 3782,
+      status: "active" as const,
+      lastUpdated: new Date().toISOString(),
+      action: { label: "View alerts", href: "/reconciliation-hub" },
+    },
+    {
+      id: "rec-1",
+      type: "recommendation-resolved" as const,
+      count: 45,
+      status: "active" as const,
+      lastUpdated: new Date().toISOString(),
+      action: { label: "View recommendations", href: "/recommendations" },
+    },
+    {
+      id: "entity-1",
+      type: "entity-risk" as const,
+      count: 128,
+      status: "active" as const,
+      lastUpdated: new Date().toISOString(),
+      action: { label: "View entities", href: "/entities" },
+    },
+  ]);
+
+  const immediateValueMetrics = [
+    {
+      label: "Audit findings",
+      value: "Live",
+      status: "live" as const,
+      action: { label: "View findings", href: "/risk-intelligence" },
+    },
+    {
+      label: "Reconciliation alerts",
+      value: "3,782",
+      trend: "+12% this month",
+      status: "alert" as const,
+      action: { label: "View alerts", href: "/reconciliation-hub" },
+    },
+    {
+      label: "Tracked recommendations",
+      value: "8,932",
+      trend: "+4% resolved",
+      status: "info" as const,
+      action: { label: "View recommendations", href: "/recommendations" },
+    },
+    {
+      label: "High-risk entities",
+      value: "128",
+      trend: "+11 vs last month",
+      status: "alert" as const,
+      action: { label: "View entities", href: "/entities" },
+    },
+  ];
 
   return (
     <div className="space-y-6">
@@ -332,28 +399,8 @@ export default function CommandCentrePage() {
         <div className="lg:col-span-3">
           <AIAuditCopilot />
         </div>
-        <div className="rounded-2xl bg-gradient-to-br from-white to-slate-100 p-5 text-slate-900 lg:col-span-2">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
-            Immediate Value
-          </div>
-          <div className="mt-4 space-y-3 text-sm">
-            <div className="flex items-center justify-between border-b border-slate-200 pb-3">
-              <span className="italic text-slate-600">Audit findings</span>
-              <span className="font-semibold">Live</span>
-            </div>
-            <div className="flex items-center justify-between border-b border-slate-200 pb-3">
-              <span className="italic text-slate-600">Reconciliation alerts</span>
-              <span className="font-semibold">3,782</span>
-            </div>
-            <div className="flex items-center justify-between border-b border-slate-200 pb-3">
-              <span className="italic text-slate-600">Tracked recommendations</span>
-              <span className="font-semibold">8,932</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="italic text-slate-600">High-risk entities</span>
-              <span className="font-semibold">128</span>
-            </div>
-          </div>
+        <div className="lg:col-span-2">
+          <ImmediateValueCard metrics={immediateValueMetrics} />
         </div>
       </section>
 
@@ -391,6 +438,8 @@ export default function CommandCentrePage() {
           </ul>
         </div>
       </section>
+
+      <NotificationCenter notifications={notifications} />
     </div>
   );
 }
