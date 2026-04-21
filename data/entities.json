@@ -1,0 +1,252 @@
+[
+  {
+    "id": "ent-001",
+    "name": "Ministry of Health",
+    "type": "Ministry",
+    "sector": "Health",
+    "region": "National",
+    "budgetTzsB": 1240,
+    "riskLevel": "High",
+    "riskScore": 78,
+    "openRecommendations": 42,
+    "closedRecommendations": 118,
+    "reconciliationGapsTzsB": 3.2,
+    "lastAudit": "2025-11-14",
+    "contactName": "Dr. Amina Juma",
+    "contactEmail": "a.juma@moh.go.tz",
+    "dataConnections": [
+      "IFMIS",
+      "HRIS",
+      "Payroll"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-002",
+    "name": "Ministry of Works & Transport",
+    "type": "Ministry",
+    "sector": "Infrastructure",
+    "region": "National",
+    "budgetTzsB": 2840,
+    "riskLevel": "Critical",
+    "riskScore": 88,
+    "openRecommendations": 61,
+    "closedRecommendations": 94,
+    "reconciliationGapsTzsB": 8.7,
+    "lastAudit": "2025-09-30",
+    "contactName": "Eng. Peter Msomba",
+    "contactEmail": "p.msomba@mowt.go.tz",
+    "dataConnections": [
+      "IFMIS",
+      "Procurement"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-003",
+    "name": "Ministry of Education, Science & Technology",
+    "type": "Ministry",
+    "sector": "Education",
+    "region": "National",
+    "budgetTzsB": 1580,
+    "riskLevel": "Moderate",
+    "riskScore": 54,
+    "openRecommendations": 28,
+    "closedRecommendations": 161,
+    "reconciliationGapsTzsB": 1.1,
+    "lastAudit": "2025-12-02",
+    "contactName": "Prof. Grace Mwinuka",
+    "contactEmail": "g.mwinuka@moest.go.tz",
+    "dataConnections": [
+      "IFMIS",
+      "HRIS"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-004",
+    "name": "Ministry of Agriculture",
+    "type": "Ministry",
+    "sector": "Agriculture",
+    "region": "National",
+    "budgetTzsB": 720,
+    "riskLevel": "Moderate",
+    "riskScore": 49,
+    "openRecommendations": 22,
+    "closedRecommendations": 88,
+    "reconciliationGapsTzsB": 0.9,
+    "lastAudit": "2025-10-18",
+    "contactName": "Hon. Ismail Chenge",
+    "contactEmail": "i.chenge@agri.go.tz",
+    "dataConnections": [
+      "IFMIS"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-005",
+    "name": "TANROADS",
+    "type": "Agency",
+    "sector": "Infrastructure",
+    "region": "National",
+    "budgetTzsB": 1890,
+    "riskLevel": "High",
+    "riskScore": 74,
+    "openRecommendations": 39,
+    "closedRecommendations": 120,
+    "reconciliationGapsTzsB": 4.3,
+    "lastAudit": "2025-11-22",
+    "contactName": "Eng. Rose Lyimo",
+    "contactEmail": "r.lyimo@tanroads.go.tz",
+    "dataConnections": [
+      "IFMIS",
+      "Procurement",
+      "Project MIS"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-006",
+    "name": "Dar es Salaam City Council",
+    "type": "LGA",
+    "sector": "Public Administration",
+    "region": "Coast",
+    "budgetTzsB": 410,
+    "riskLevel": "Moderate",
+    "riskScore": 58,
+    "openRecommendations": 18,
+    "closedRecommendations": 67,
+    "reconciliationGapsTzsB": 1.6,
+    "lastAudit": "2025-12-10",
+    "contactName": "Fatuma Said",
+    "contactEmail": "f.said@dcc.go.tz",
+    "dataConnections": [
+      "LGRCIS",
+      "IFMIS"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-007",
+    "name": "Mwanza City Council",
+    "type": "LGA",
+    "sector": "Public Administration",
+    "region": "Lake",
+    "budgetTzsB": 180,
+    "riskLevel": "High",
+    "riskScore": 71,
+    "openRecommendations": 24,
+    "closedRecommendations": 54,
+    "reconciliationGapsTzsB": 2.1,
+    "lastAudit": "2025-10-02",
+    "contactName": "John Magoti",
+    "contactEmail": "j.magoti@mcc.go.tz",
+    "dataConnections": [
+      "LGRCIS"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-008",
+    "name": "Dodoma Capital Development Authority",
+    "type": "Public Authority",
+    "sector": "Infrastructure",
+    "region": "Capital",
+    "budgetTzsB": 260,
+    "riskLevel": "Low",
+    "riskScore": 31,
+    "openRecommendations": 6,
+    "closedRecommendations": 41,
+    "reconciliationGapsTzsB": 0.2,
+    "lastAudit": "2026-01-20",
+    "contactName": "Arch. Neema Ulaya",
+    "contactEmail": "n.ulaya@cda.go.tz",
+    "dataConnections": [
+      "IFMIS"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-009",
+    "name": "Tanzania Revenue Authority",
+    "type": "Agency",
+    "sector": "Finance",
+    "region": "National",
+    "budgetTzsB": 480,
+    "riskLevel": "Low",
+    "riskScore": 28,
+    "openRecommendations": 9,
+    "closedRecommendations": 172,
+    "reconciliationGapsTzsB": 0.4,
+    "lastAudit": "2026-02-05",
+    "contactName": "CPA Yusuph Ngalo",
+    "contactEmail": "y.ngalo@tra.go.tz",
+    "dataConnections": [
+      "IFMIS",
+      "eFiling",
+      "Customs"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-010",
+    "name": "TANESCO",
+    "type": "Public Authority",
+    "sector": "Energy",
+    "region": "National",
+    "budgetTzsB": 2110,
+    "riskLevel": "High",
+    "riskScore": 72,
+    "openRecommendations": 34,
+    "closedRecommendations": 98,
+    "reconciliationGapsTzsB": 5.2,
+    "lastAudit": "2025-08-28",
+    "contactName": "Eng. Said Mkumbwa",
+    "contactEmail": "s.mkumbwa@tanesco.co.tz",
+    "dataConnections": [
+      "ERP",
+      "Billing"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-011",
+    "name": "DAWASA",
+    "type": "Public Authority",
+    "sector": "Water",
+    "region": "Coast",
+    "budgetTzsB": 340,
+    "riskLevel": "Moderate",
+    "riskScore": 52,
+    "openRecommendations": 14,
+    "closedRecommendations": 63,
+    "reconciliationGapsTzsB": 1,
+    "lastAudit": "2025-11-05",
+    "contactName": "Eng. Lydia Kilaba",
+    "contactEmail": "l.kilaba@dawasa.go.tz",
+    "dataConnections": [
+      "ERP"
+    ],
+    "createdAt": "2023-01-12"
+  },
+  {
+    "id": "ent-012",
+    "name": "Arusha District Council",
+    "type": "LGA",
+    "sector": "Public Administration",
+    "region": "North",
+    "budgetTzsB": 95,
+    "riskLevel": "Moderate",
+    "riskScore": 46,
+    "openRecommendations": 11,
+    "closedRecommendations": 38,
+    "reconciliationGapsTzsB": 0.6,
+    "lastAudit": "2025-12-19",
+    "contactName": "Baraka Mollel",
+    "contactEmail": "b.mollel@arushadc.go.tz",
+    "dataConnections": [
+      "LGRCIS"
+    ],
+    "createdAt": "2023-01-12"
+  }
+]
