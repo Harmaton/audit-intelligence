@@ -19,7 +19,7 @@ export default function RootLayout({
         <div className="flex min-h-screen">
           <Sidebar />
           <main className="flex-1 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900">
-            <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+            <div className="mx-auto w-full max-w-7xl px-3 py-4 pb-20 sm:px-4 sm:py-6 sm:pb-24 md:px-6 lg:px-8 lg:pb-8">
               {children}
             </div>
           </main>
